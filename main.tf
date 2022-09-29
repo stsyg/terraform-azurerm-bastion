@@ -15,7 +15,7 @@ resource "azurerm_subnet" "infrasubnet" {
   name                 = "AzureBastionSubnet"
   resource_group_name  = azurerm_resource_group.infrarg.name
   virtual_network_name = var.name_vnet
-  address_prefixes     = var.prefix_subnet
+  address_prefixes     = [var.prefix_subnet]
 }
 
 resource "azurerm_public_ip" "infrabastionpip" {
