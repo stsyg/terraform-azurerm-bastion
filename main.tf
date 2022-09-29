@@ -13,8 +13,8 @@ data "azurerm_virtual_network" "infravnet" {
 
 resource "azurerm_subnet" "infrasubnet" {
   name                 = "AzureBastionSubnet"
-  resource_group_name  = azurerm_resource_group.infravnet.resource_group_name
-  virtual_network_name = azurerm_virtual_network.infravnet.name
+  resource_group_name  = data.azurerm_virtual_network.infravnet.resource_group_name
+  virtual_network_name = data.azurerm_virtual_network.infravnet.name
   address_prefixes     = [var.prefix_subnet]
 }
 
