@@ -32,6 +32,10 @@ variable "bastion_host_name" {
   type        = string
   description = "Azure Bastion Host name"
 }
+variable "rg_vnet" {
+  type        = string
+  description = "Resource Group of Infrastructure vNet"
+}
 
 variable "ip_configuration_name" {
   type        = string
