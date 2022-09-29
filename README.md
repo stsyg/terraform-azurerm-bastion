@@ -1,2 +1,5 @@
-# terraform-azurerm-bastion
-Deployment of Azure Bastion
+# Deployment of Azure Bastion
+
+The following resources will be created:
+
+- Azure Bastion
