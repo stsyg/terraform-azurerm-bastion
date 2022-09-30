@@ -3,7 +3,7 @@ terraform {
   backend "remote" {
     organization = "The38Dev"
     workspaces {
-      name = "terraform-azurerm-bastion"
+      name = "terraform-azurerm-kubernetes-vm"
     }
   }
 }
