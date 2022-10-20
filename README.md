@@ -7,4 +7,4 @@ The following resources will be created:
 
 - Azure Bastion in the existing vNet
 
-Note: run this code after deploying infrastructure network from https://github.com/stsyg/terraform-azurerm-network
+Note: run this code after deploying the infrastructure network from https://github.com/stsyg/terraform-azurerm-network
